@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'signup-form',
@@ -7,12 +7,12 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./signup-form.component.css']
 })
 export class SignupFormComponent {
-  form = new FormGroup({
-    username: new FormControl('', [
+  form = new UntypedFormGroup({
+    username: new UntypedFormControl('', [
       Validators.required,
       Validators.minLength(3)
     ]),
-    password: new FormControl('', Validators.required)
+    password: new UntypedFormControl('', Validators.required)
   });
 
   get username(){
