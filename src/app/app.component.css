@@ -1,0 +1,89 @@
+/* Styling for company name */
+.company-name {
+  position: absolute;
+  top: calc(50% - 3.5cm); /* Adjust to center the company name vertically */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  color: white;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  border-radius: 10px;
+  text-align:center;
+  width: 100%;
+  z-index: 1; /* Ensure the company name appears above the card */
+}
+
+
+/* Styling for container */
+.container {
+  background: url('../assets/background.png') no-repeat center center fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; /* Ensure the company name and card are positioned relative to this container */
+}
+
+/* Styling for card */
+.card {
+  background: rgba(255, 255, 255, 0.5); /* RGBA color with 50% opacity (adjust the alpha value as needed) */
+  padding: 20px; /* Adjust padding to make the card smaller */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  max-height: 300px; /* Adjust max-height to make the card shorter */
+  overflow-y: auto; /* Add scroll if content exceeds max-height */
+}
+
+/* Styling for message input */
+.message-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #32CD32;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Styling for message box */
+.message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  padding: 10px; /* Adjust padding to make the message box shorter */
+  max-width: 300px; /* Adjust maximum width as needed */
+  margin-left: 40px;
+}
+
+
+/* Styling for button */
+button {
+  background-color: #32CD32;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Add margin on top to create space between message box and button */
+}
+
+
+button:hover {
+  background-color: #228B22;
+}
+
+/* Styling for response */
+.response {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #32CD32;
+  max-width: 300px; 
+}

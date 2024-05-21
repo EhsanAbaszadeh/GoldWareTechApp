@@ -1,1 +1,15 @@
-<signup-form></signup-form>
+<div class="company-name">
+  <h1>GoldWareTech</h1>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="message-box">
+      <input #messageInput type="text" placeholder="Enter your message" maxlength="20" class="message-input" />
+      <div *ngIf="responseCode" class="response">
+        Server Response: {{ responseCode }}
+      </div>
+      <button (click)="sendMessage(messageInput.value)">Send message</button>
+    </div>
+  </div>
+</div>
